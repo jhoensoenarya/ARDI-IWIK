@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1em;
+    color: #666;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #333;
+    margin: 20px auto;
+}
+
+.children {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child {
+    text-align: center;
+    margin: 10px;
+}
+
+.child img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .parent {
+        flex-direction: column;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .children {
+        flex-direction: column;
+    }
+
+    .child img {
+        width: 70px;
+        height: 70px;
+    }
+}
